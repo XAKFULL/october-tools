@@ -4,6 +4,7 @@
  * Add active and hidden local scopes
  *
  * Trait ScopeHidden
+ * @deprecated
  * @package Xakfull\Tools\Traits
  * @author XAKFULL
  */

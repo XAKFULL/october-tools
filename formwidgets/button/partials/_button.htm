@@ -1,0 +1,12 @@
+    <button
+            class="btn btn-success oc-icon-refresh"
+            data-request="onActivate"
+            data-request-success="$(this).prop('disabled', true)"
+            data-stripe-load-indicator
+            data-request-flash
+            data-attach-loading
+            data-request-data="function: '<?php echo $function ?>', controller: '<?php echo $controller ?>'"
+            <?php echo ($redirect) ? 'data-request-redirect="'.$redirect.'"' : '' ?>
+    >
+        <?php echo $text ?>
+    </button>

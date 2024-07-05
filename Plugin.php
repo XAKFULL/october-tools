@@ -20,22 +20,19 @@ class Plugin extends PluginBase
         return [];
     }
 
-    public function registerMarkupTags()
-    {
+    public function registerFormWidgets() {
         return [
-            'filters' => [
-                'collect' => function($var){ return collect($var);},
-                'dd' => function($var){ dd($var);}
-                // A global function, i.e str_plural()
-//                'dd' => 'str_plural',
+            'Xakfull\Tools\FormWidgets\Button' => 'button',
+        ];
+    }
 
-                // A local method, i.e $this->makeTextAllCaps()
-//                'uppercase' => [$this, 'makeTextAllCaps']
-            ],
+    public function registerMarkupTags() {
+        return [
             'functions' => [
                 'collect' => function($var){ return collect($var);},
                 'dd' => function($var){ dd($var);}
             ]
+
         ];
     }
 }
